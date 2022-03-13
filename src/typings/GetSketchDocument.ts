@@ -43,6 +43,7 @@ export interface GetSketchDocument_share_version {
 
 export interface GetSketchDocument_share {
   shortId: string | null;
+  identifier: string;
   version: GetSketchDocument_share_version | null;
 }
 

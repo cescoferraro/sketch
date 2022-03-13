@@ -5,3 +5,5 @@ apollo client:codegen --tsFileExtension=ts \
       --excludes=node_modules/* --tagName=gql --no-addTypename \
       --passthroughCustomScalars \
       --outputFlat src/typings
+
+rm ./src/typings/globalTypes.ts
