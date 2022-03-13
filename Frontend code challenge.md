@@ -39,7 +39,7 @@ Notes:
 
 ## Sketch file
 
-You can check the design at https://www.sketch.com/s/26343997-bb48-43ff-a2f7-bd6bc7ef976c (see `Document` and `Artboard` artboards.)
+You can check the design at [https://www.sketch.com/s/26343997-bb48-43ff-a2f7-bd6bc7ef976c](https://www.sketch.com/s/26343997-bb48-43ff-a2f7-bd6bc7ef976c) (see `Document` and `Artboard` artboards.)
 
 You can play the prototype to get a better idea of what to develop.
 
@@ -60,7 +60,7 @@ You don't have to study the schema. Use the following query to get all the data 
 
 ```graphql
 {
-  share(id: "e981971c-ff57-46dc-a932-a60dc1804992") {
+  share(shortId: "e981971c-ff57-46dc-a932-a60dc1804992") {
     identifier
     version {
       document {

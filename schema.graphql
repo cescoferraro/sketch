@@ -1,0 +1,44 @@
+type Thumbnails {
+    height: String
+    url: String
+    width: String
+}
+
+type Files {
+    height: Int
+    scale: Int
+    url: String
+    width: Int
+    thumbnails: [Thumbnails]
+}
+
+type Entries {
+    id: String
+    isArtboard: Boolean
+    name: String
+    files: [Files]
+}
+
+type Artboards {
+    entries: [Entries]
+}
+
+type Document {
+    name: String
+    artboards: Artboards
+}
+
+type Version {
+    document: Document
+}
+
+type Share {
+    shortId: String
+    version: Version
+    identifier: String!
+}
+
+
+type Query {
+    share(shortId: String!): Share!
+}
