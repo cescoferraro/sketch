@@ -14,31 +14,31 @@ export interface GetSketchDocument_share_version_document_artboards_entries_file
 }
 
 export interface GetSketchDocument_share_version_document_artboards_entries_files {
-  url: string | null;
-  height: number | null;
-  width: number | null;
-  scale: number | null;
-  thumbnails: (GetSketchDocument_share_version_document_artboards_entries_files_thumbnails | null)[] | null;
+  url: string;
+  height: number;
+  width: number;
+  scale: number;
+  thumbnails: GetSketchDocument_share_version_document_artboards_entries_files_thumbnails[];
 }
 
 export interface GetSketchDocument_share_version_document_artboards_entries {
-  id: string | null;
-  name: string | null;
-  isArtboard: boolean | null;
-  files: (GetSketchDocument_share_version_document_artboards_entries_files | null)[] | null;
+  id: string;
+  name: string;
+  isArtboard: boolean;
+  files: GetSketchDocument_share_version_document_artboards_entries_files[];
 }
 
 export interface GetSketchDocument_share_version_document_artboards {
-  entries: (GetSketchDocument_share_version_document_artboards_entries | null)[] | null;
+  entries: GetSketchDocument_share_version_document_artboards_entries[];
 }
 
 export interface GetSketchDocument_share_version_document {
   name: string | null;
-  artboards: GetSketchDocument_share_version_document_artboards | null;
+  artboards: GetSketchDocument_share_version_document_artboards;
 }
 
 export interface GetSketchDocument_share_version {
-  document: GetSketchDocument_share_version_document | null;
+  document: GetSketchDocument_share_version_document;
 }
 
 export interface GetSketchDocument_share {

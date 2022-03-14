@@ -60,7 +60,7 @@ You don't have to study the schema. Use the following query to get all the data 
 
 ```graphql
 {
-  share(shortId: "e981971c-ff57-46dc-a932-a60dc1804992") {
+  share(id: "e981971c-ff57-46dc-a932-a60dc1804992") {
     identifier
     version {
       document {

@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
 export const DocumentQuery = gql`
-  query GetSketchDocument($shortId: String!) {
-    share(shortId: $shortId) {
+  query GetSketchDocument($id: String!) {
+    share(id: $id) {
       shortId
       identifier
       version {

@@ -2,27 +2,44 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { GetSketchDocument } from "../typings/GetSketchDocument";
 import { DocumentQuery } from "./documentQuery";
+import { Container, Grid } from "@mui/material";
+import { useParams } from "react-router-dom";
+import { DocumentGridItem } from "./DocumentGridItem";
+import { SketchAppBar } from "../AppBar/SketchAppBar";
 
 export const Document = (): React.ReactElement => {
+  const { id } = useParams();
   const { loading, error, data } = useQuery<GetSketchDocument>(DocumentQuery, {
     variables: {
-      shortId: "26343997-bb48-43ff-a2f7-bd6bc7ef976c",
+      id: id || "26343997-bb48-43ff-a2f7-bd6bc7ef976c",
       // should work
-      // shortId: "e981971c-ff57-46dc-a932-a60dc1804992",
+      // id: "e981971c-ff57-46dc-a932-a60dc1804992",
     },
   });
   return (
-    <div>
-      <h2>ArtWorks</h2>
-      {loading ? (
-        <p>Loading...</p>
-      ) : error ? (
-        <p>Error:(</p>
-      ) : (
-        data?.share.version?.document?.artboards?.entries?.map((a) => {
-          return <h2 key={a?.id}>{a?.name}</h2>;
-        })
-      )}
-    </div>
+    <>
+      <SketchAppBar
+        title={loading ? "Sketch" : data?.share.version?.document?.name || ""}
+      />
+      <Container style={{ marginTop: 30 }}>
+        {loading ? (
+          <p>Loading...</p>
+        ) : error ? (
+          <p>Error:(</p>
+        ) : (
+          <Grid
+            container
+            spacing={{ xs: 2, md: 3 }}
+            columns={{ xs: 4, sm: 8, md: 12 }}
+          >
+            {data?.share.version?.document?.artboards?.entries?.map(
+              (a, index) => (
+                <DocumentGridItem key={index} a={a} />
+              )
+            )}
+          </Grid>
+        )}
+      </Container>
+    </>
   );
 };

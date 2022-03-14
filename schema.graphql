@@ -5,31 +5,31 @@ type Thumbnails {
 }
 
 type Files {
-    height: Int
-    scale: Int
-    url: String
-    width: Int
-    thumbnails: [Thumbnails]
+    height: Int!
+    scale: Int!
+    url: String!
+    width: Int!
+    thumbnails: [Thumbnails!]!
 }
 
 type Entries {
-    id: String
-    isArtboard: Boolean
-    name: String
-    files: [Files]
+    id: String!
+    isArtboard: Boolean!
+    name: String!
+    files: [Files!]!
 }
 
 type Artboards {
-    entries: [Entries]
+    entries: [Entries!]!
 }
 
 type Document {
     name: String
-    artboards: Artboards
+    artboards: Artboards!
 }
 
 type Version {
-    document: Document
+    document: Document!
 }
 
 type Share {
@@ -40,5 +40,5 @@ type Share {
 
 
 type Query {
-    share(shortId: String!): Share!
+    share(id: String!): Share!
 }
