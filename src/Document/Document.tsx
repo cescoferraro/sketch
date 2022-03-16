@@ -10,11 +10,7 @@ import { SketchAppBar } from "../AppBar/SketchAppBar";
 export const Document = (): React.ReactElement => {
   const { id } = useParams();
   const { loading, error, data } = useQuery<GetSketchDocument>(DocumentQuery, {
-    variables: {
-      id: id || "26343997-bb48-43ff-a2f7-bd6bc7ef976c",
-      // should work
-      // id: "e981971c-ff57-46dc-a932-a60dc1804992",
-    },
+    variables: { id: id || "e981971c-ff57-46dc-a932-a60dc1804992" },
   });
   return (
     <>
@@ -30,7 +26,7 @@ export const Document = (): React.ReactElement => {
           <Grid
             container
             spacing={{ xs: 2, md: 3 }}
-            columns={{ xs: 4, sm: 8, md: 12 }}
+            columns={{ xs: 4, sm: 12, md: 16 }}
           >
             {data?.share.version?.document?.artboards?.entries?.map(
               (a, index) => (

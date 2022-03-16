@@ -3,10 +3,10 @@ import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 import { SketchLogo } from "../assets/sketch-logo";
 import { useNavigate } from "react-router-dom";
 
-interface Props {
+type Props = {
   title: string;
   children?: React.ReactNode;
-}
+};
 
 export const SketchAppBar = ({
   title,
@@ -31,8 +31,9 @@ export const SketchAppBar = ({
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2 }}
+              onClick={() => navigate("/")}
             >
-              <SketchLogo onClick={() => navigate("/")} />
+              <SketchLogo />
             </IconButton>
           )}
           {children}

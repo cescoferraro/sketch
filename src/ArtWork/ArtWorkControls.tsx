@@ -7,21 +7,24 @@ import { ArrowLeft } from "../assets/arrow-left";
 import { BreadCrumb } from "../assets/breadcrumb";
 import { ArrowRight } from "../assets/arrow-right";
 
+type Props = {
+  page: number;
+  setPage: Dispatch<SetStateAction<number>>;
+  state: GetSketchDocument_share_version_document_artboards_entries;
+};
+
+const style = {
+  alignItems: "center",
+  display: "flex",
+  justifyContent: "center",
+  margin: 2,
+};
+
 export const ArtWorkControls = ({
   page,
   state,
   setPage,
-}: {
-  page: number;
-  setPage: Dispatch<SetStateAction<number>>;
-  state: GetSketchDocument_share_version_document_artboards_entries;
-}) => {
-  const style = {
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "center",
-    margin: 2,
-  };
+}: Props): React.ReactElement => {
   const navigate = useNavigate();
   return (
     <span style={{ display: "flex", position: "absolute" }}>
