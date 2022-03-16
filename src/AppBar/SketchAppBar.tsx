@@ -3,10 +3,10 @@ import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 import { SketchLogo } from "../assets/sketch-logo";
 import { useNavigate } from "react-router-dom";
 
-type Props = {
+interface Props {
   title: string;
   children?: React.ReactNode;
-};
+}
 
 export const SketchAppBar = ({
   title,

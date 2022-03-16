@@ -26,8 +26,8 @@ export const Artwork = (): React.ReactElement | null => {
         containerStyle={{ flexGrow: 1, height: "100%" }}
         onChangeIndex={(index) => setPage(index)}
       >
-        {(state?.files || []).map((f) => (
-          <ArtworkItem key={f.url} f={f} />
+        {(state?.files || []).map((file) => (
+          <ArtworkItem key={file.url} file={file} />
         ))}
       </BindKeyboardSwipeableViews>
     </Box>

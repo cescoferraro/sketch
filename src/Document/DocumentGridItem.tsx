@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { Grid } from "@mui/material";
 import * as React from "react";
 
-type Props = {
-  a: GetSketchDocument_share_version_document_artboards_entries;
-};
+interface Props {
+  artwork: GetSketchDocument_share_version_document_artboards_entries;
+}
 
-export const DocumentGridItem = ({ a }: Props): React.ReactElement => {
+export const DocumentGridItem = ({ artwork }: Props): React.ReactElement => {
   const navigate = useNavigate();
-  const firstFile = a?.files[0];
+  const firstFile = artwork?.files[0];
   return (
     <Grid
       item
@@ -24,9 +24,9 @@ export const DocumentGridItem = ({ a }: Props): React.ReactElement => {
       }}
     >
       <img
-        onClick={() => navigate(`/art/${a?.id}`, { state: a })}
+        onClick={() => navigate(`/artwork/${artwork?.id}`, { state: artwork })}
         src={firstFile?.url || ""}
-        alt={a.id}
+        alt={artwork.name}
         style={{
           width: "100%",
           height: "100%",

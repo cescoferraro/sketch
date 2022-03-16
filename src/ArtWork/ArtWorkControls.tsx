@@ -7,11 +7,11 @@ import { ArrowLeft } from "../assets/arrow-left";
 import { BreadCrumb } from "../assets/breadcrumb";
 import { ArrowRight } from "../assets/arrow-right";
 
-type Props = {
+interface Props {
   page: number;
   setPage: Dispatch<SetStateAction<number>>;
   state: GetSketchDocument_share_version_document_artboards_entries;
-};
+}
 
 const style = {
   alignItems: "center",

@@ -30,7 +30,7 @@ export const Document = (): React.ReactElement => {
           >
             {data?.share.version?.document?.artboards?.entries?.map(
               (a, index) => (
-                <DocumentGridItem key={index} a={a} />
+                <DocumentGridItem key={index} artwork={a} />
               )
             )}
           </Grid>
