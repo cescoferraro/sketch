@@ -45,3 +45,6 @@ But it makes use of UNSAFE react methods, so removing that dependencies
 and add the gesture another way would benefit the app.
 
 Increase code coverage
+
+The app was deployed to [https://cescoferraro.github.io/](https://cescoferraro.github.io/), 
+but the API fails because of CORS issues. Fix this would be good as well.
