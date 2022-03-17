@@ -5,7 +5,7 @@
   "homepage": "https://cescoferraro.github.io/sketch/",
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build --base=/sketch",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "types": "./createTypings.sh",
     "lint": "eslint --ext .ts,.tsx ."
