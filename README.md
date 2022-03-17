@@ -43,3 +43,5 @@ I have used react-swipeable-views to provide the artwork
 page the slide gesture in mobile screens.
 But it makes use of UNSAFE react methods, so removing that dependencies 
 and add the gesture another way would benefit the app.
+
+Increase code coverage
