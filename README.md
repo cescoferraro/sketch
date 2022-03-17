@@ -12,9 +12,10 @@ yarn
 
 Once you got it all installed, just run
 
-```bash
+```
 yarn start
 ```
+Now you can browse the app at `http://localhost:3000/sketch/`
 
 ## Developing
 
@@ -32,3 +33,13 @@ Running this will create a folder called `dist` containing the whole website
 ```bash
 yarn build
 ```
+
+## Possible improvements
+
+I wasn't able to make vite import svg files as React component. 
+Making that work would make use of browser cache for svg files
+
+I have used react-swipeable-views to provide the artwork 
+page the slide gesture in mobile screens.
+But it makes use of UNSAFE react methods, so removing that dependencies 
+and add the gesture another way would benefit the app.

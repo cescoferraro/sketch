@@ -4,7 +4,7 @@ import * as React from "react";
 import { useState } from "react";
 import { useLocationState } from "./useLocationState";
 import { Box } from "@mui/material";
-import { SketchAppBar } from "../AppBar/SketchAppBar";
+import { AppBar } from "../AppBar/AppBar";
 import { ArtWorkControls } from "./ArtWorkControls";
 import { ArtworkItem } from "./ArtworkItem";
 import { Navigate, useLocation } from "react-router-dom";
@@ -17,9 +17,9 @@ export const Artwork = (): React.ReactElement | null => {
   const [page, setPage] = useState(0);
   return location.state ? (
     <Box display={"flex"} flexDirection={"column"} height={"100vh"}>
-      <SketchAppBar title={state?.name || ""}>
+      <AppBar title={state?.name || ""}>
         <ArtWorkControls setPage={setPage} page={page} state={state} />
-      </SketchAppBar>
+      </AppBar>
       <BindKeyboardSwipeableViews
         index={page}
         style={{ flexGrow: 1 }}

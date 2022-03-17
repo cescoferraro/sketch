@@ -1,27 +1,26 @@
 import React from "react";
-import { useQuery } from "@apollo/client";
-import { GetSketchDocument } from "../typings/GetSketchDocument";
-import { DocumentQuery } from "./documentQuery";
-import { Container, Grid } from "@mui/material";
-import { useParams } from "react-router-dom";
+import { Box, CircularProgress, Container, Grid } from "@mui/material";
 import { DocumentGridItem } from "./DocumentGridItem";
-import { SketchAppBar } from "../AppBar/SketchAppBar";
+import { AppBar } from "../AppBar/AppBar";
+import { useDocumentQuery } from "./useDocumentQuery";
 
 export const Document = (): React.ReactElement => {
-  const { id } = useParams();
-  const { loading, error, data } = useQuery<GetSketchDocument>(DocumentQuery, {
-    variables: { id: id || "e981971c-ff57-46dc-a932-a60dc1804992" },
-  });
+  const { loading, error, data } = useDocumentQuery();
   return (
     <>
-      <SketchAppBar
+      <AppBar
         title={loading ? "Sketch" : data?.share.version?.document?.name || ""}
       />
       <Container style={{ marginTop: 30 }}>
         {loading ? (
-          <p>Loading...</p>
+          <Box justifyContent={"center"} width={"100%"} display={"flex"}>
+            <CircularProgress />
+          </Box>
         ) : error ? (
-          <p>Error:(</p>
+          <>
+            <p>Error:( </p>
+            <p>{JSON.stringify(error)}</p>
+          </>
         ) : (
           <Grid
             container

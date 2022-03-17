@@ -1,5 +1,11 @@
 import * as React from "react";
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar as MUIAppBar,
+  Box,
+  IconButton,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import { SketchLogo } from "../assets/sketch-logo";
 import { useNavigate } from "react-router-dom";
 
@@ -8,14 +14,11 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export const SketchAppBar = ({
-  title,
-  children,
-}: Props): React.ReactElement => {
+export const AppBar = ({ title, children }: Props): React.ReactElement => {
   const navigate = useNavigate();
   return (
     <Box>
-      <AppBar
+      <MUIAppBar
         position="static"
         sx={{
           background: "white",
@@ -25,16 +28,18 @@ export const SketchAppBar = ({
       >
         <Toolbar>
           {!children && (
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-              onClick={() => navigate("/")}
-            >
-              <SketchLogo />
-            </IconButton>
+            <span style={{ display: "flex", position: "absolute" }}>
+              <IconButton
+                size="large"
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+                sx={{ mr: 2 }}
+                onClick={() => navigate("/")}
+              >
+                <SketchLogo />
+              </IconButton>
+            </span>
           )}
           {children}
           <Typography
@@ -46,7 +51,7 @@ export const SketchAppBar = ({
             {title}
           </Typography>
         </Toolbar>
-      </AppBar>
+      </MUIAppBar>
     </Box>
   );
 };
