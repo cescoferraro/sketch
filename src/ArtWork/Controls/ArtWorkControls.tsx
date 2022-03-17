@@ -1,11 +1,11 @@
 import React, { Dispatch, SetStateAction } from "react";
-import { GetSketchDocument_share_version_document_artboards_entries } from "../typings/GetSketchDocument";
+import { GetSketchDocument_share_version_document_artboards_entries } from "../../typings/GetSketchDocument";
 import { useNavigate } from "react-router-dom";
 import { Box, IconButton, Typography } from "@mui/material";
-import { Close } from "../assets/close";
-import { ArrowLeft } from "../assets/arrow-left";
-import { BreadCrumb } from "../assets/breadcrumb";
-import { ArrowRight } from "../assets/arrow-right";
+import { Close } from "../../assets/close";
+import { ArrowLeft } from "../../assets/arrow-left";
+import { BreadCrumb } from "../../assets/breadcrumb";
+import { ArrowRight } from "../../assets/arrow-right";
 
 interface Props {
   page: number;

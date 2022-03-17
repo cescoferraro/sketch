@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useLocationState } from "./useLocationState";
 import { Box } from "@mui/material";
 import { AppBar } from "../AppBar/AppBar";
-import { ArtWorkControls } from "./ArtWorkControls";
+import { ArtWorkControls } from "./Controls/ArtWorkControls";
 import { ArtworkItem } from "./ArtworkItem";
 import { Navigate, useLocation } from "react-router-dom";
 
@@ -18,7 +18,9 @@ export const Artwork = (): React.ReactElement | null => {
   return location.state ? (
     <Box display={"flex"} flexDirection={"column"} height={"100vh"}>
       <AppBar title={state?.name || ""}>
-        <ArtWorkControls setPage={setPage} page={page} state={state} />
+        {state && (
+          <ArtWorkControls setPage={setPage} page={page} state={state} />
+        )}
       </AppBar>
       <BindKeyboardSwipeableViews
         index={page}

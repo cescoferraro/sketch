@@ -1,0 +1,394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtWorkControls renders 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <span
+        style="display: flex; position: absolute;"
+      >
+        <div
+          class="sc-gsDKAQ eXKIQs MuiBox-root"
+        >
+          <button
+            class="MuiButtonBase-root-KjFju gUleGd MuiButtonBase-root MuiIconButton-root-jYvkJQ dPgUek MuiIconButton-root MuiIconButton-sizeMedium"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              height="11"
+              viewBox="0 0 11 11"
+              width="11"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.5,13.5 L13.5,3.5 M13.5,13.5 L3.5,3.5"
+                fill="none"
+                opacity=".5"
+                stroke="#000"
+                stroke-linecap="round"
+                transform="matrix(-1 0 0 1 14 -3)"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root-ieAhOC kYGcPf MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="sc-gsDKAQ eXKIQs MuiBox-root"
+        >
+          <div
+            class="sc-gsDKAQ MuiBox-root"
+            style="align-items: center; display: flex; justify-content: center; margin: 2px;"
+          >
+            <button
+              class="MuiButtonBase-root-KjFju gUleGd MuiButtonBase-root MuiIconButton-root-jYvkJQ dPgUek MuiIconButton-root MuiIconButton-sizeMedium"
+              tabindex="0"
+              type="button"
+            >
+              <svg
+                height="13"
+                viewBox="0 0 7 13"
+                width="7"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline
+                  fill="none"
+                  opacity=".5"
+                  points=".5 12.5 6.5 6.5 .5 .5"
+                  stroke="#000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  transform="matrix(-1 0 0 1 7 0)"
+                />
+              </svg>
+              <span
+                class="MuiTouchRipple-root-ieAhOC kYGcPf MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="sc-gsDKAQ MuiBox-root"
+            style="align-items: center; display: flex; justify-content: center; margin: 2px;"
+          >
+            <p
+              class="MuiTypography-root-bWKFam hKjhtB MuiTypography-root MuiTypography-body1"
+              style="opacity: 0.5;"
+            >
+              2
+            </p>
+          </div>
+          <div
+            class="sc-gsDKAQ MuiBox-root"
+            style="align-items: center; display: flex; justify-content: center; margin: 2px;"
+          >
+            <svg
+              height="12"
+              viewBox="0 0 7 12"
+              width="7"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <path
+                  d="M1.91422632,11.4052039 L6.34643225,1.40520393 C6.5702202,0.900290676 6.34232311,0.309561628 5.83740985,0.0857736753 C5.3324966,-0.138014277 4.74176755,0.0898828101 4.5179796,0.594796067 L0.0857736753,10.5947961 C-0.138014277,11.0997093 0.0898828101,11.6904384 0.594796067,11.9142263 C1.09970932,12.1380143 1.69043837,11.9101172 1.91422632,11.4052039 Z"
+                  id="breadcrumb-a"
+                />
+              </defs>
+              <g
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <mask
+                  fill="#fff"
+                  id="breadcrumb-b"
+                >
+                  <use
+                    href="#breadcrumb-a"
+                  />
+                </mask>
+                <use
+                  fill="#000"
+                  fill-opacity="0"
+                  fill-rule="nonzero"
+                  href="#breadcrumb-a"
+                />
+                <g
+                  fill="#000"
+                  fill-opacity=".4"
+                  mask="url(#breadcrumb-b)"
+                >
+                  <rect
+                    height="16"
+                    transform="translate(-5 -2)"
+                    width="16"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div
+            class="sc-gsDKAQ MuiBox-root"
+            style="align-items: center; display: flex; justify-content: center; margin: 2px;"
+          >
+            <p
+              class="MuiTypography-root-bWKFam hKjhtB MuiTypography-root MuiTypography-body1"
+              style="opacity: 0.5;"
+            >
+              1
+            </p>
+          </div>
+          <div
+            class="sc-gsDKAQ MuiBox-root"
+            style="align-items: center; display: flex; justify-content: center; margin: 2px;"
+          >
+            <button
+              class="MuiButtonBase-root-KjFju gUleGd MuiButtonBase-root MuiIconButton-root-jYvkJQ dPgUek MuiIconButton-root MuiIconButton-sizeMedium"
+              tabindex="0"
+              type="button"
+            >
+              <svg
+                height="13"
+                viewBox="0 0 7 13"
+                width="7"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline
+                  fill="none"
+                  opacity=".5"
+                  points=".5 12.5 6.5 6.5 .5 .5"
+                  stroke="#000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span
+                class="MuiTouchRipple-root-ieAhOC kYGcPf MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </span>
+    </div>
+  </body>,
+  "container": <div>
+    <span
+      style="display: flex; position: absolute;"
+    >
+      <div
+        class="sc-gsDKAQ eXKIQs MuiBox-root"
+      >
+        <button
+          class="MuiButtonBase-root-KjFju gUleGd MuiButtonBase-root MuiIconButton-root-jYvkJQ dPgUek MuiIconButton-root MuiIconButton-sizeMedium"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            height="11"
+            viewBox="0 0 11 11"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.5,13.5 L13.5,3.5 M13.5,13.5 L3.5,3.5"
+              fill="none"
+              opacity=".5"
+              stroke="#000"
+              stroke-linecap="round"
+              transform="matrix(-1 0 0 1 14 -3)"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root-ieAhOC kYGcPf MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <div
+        class="sc-gsDKAQ eXKIQs MuiBox-root"
+      >
+        <div
+          class="sc-gsDKAQ MuiBox-root"
+          style="align-items: center; display: flex; justify-content: center; margin: 2px;"
+        >
+          <button
+            class="MuiButtonBase-root-KjFju gUleGd MuiButtonBase-root MuiIconButton-root-jYvkJQ dPgUek MuiIconButton-root MuiIconButton-sizeMedium"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              height="13"
+              viewBox="0 0 7 13"
+              width="7"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                fill="none"
+                opacity=".5"
+                points=".5 12.5 6.5 6.5 .5 .5"
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                transform="matrix(-1 0 0 1 7 0)"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root-ieAhOC kYGcPf MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="sc-gsDKAQ MuiBox-root"
+          style="align-items: center; display: flex; justify-content: center; margin: 2px;"
+        >
+          <p
+            class="MuiTypography-root-bWKFam hKjhtB MuiTypography-root MuiTypography-body1"
+            style="opacity: 0.5;"
+          >
+            2
+          </p>
+        </div>
+        <div
+          class="sc-gsDKAQ MuiBox-root"
+          style="align-items: center; display: flex; justify-content: center; margin: 2px;"
+        >
+          <svg
+            height="12"
+            viewBox="0 0 7 12"
+            width="7"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <path
+                d="M1.91422632,11.4052039 L6.34643225,1.40520393 C6.5702202,0.900290676 6.34232311,0.309561628 5.83740985,0.0857736753 C5.3324966,-0.138014277 4.74176755,0.0898828101 4.5179796,0.594796067 L0.0857736753,10.5947961 C-0.138014277,11.0997093 0.0898828101,11.6904384 0.594796067,11.9142263 C1.09970932,12.1380143 1.69043837,11.9101172 1.91422632,11.4052039 Z"
+                id="breadcrumb-a"
+              />
+            </defs>
+            <g
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <mask
+                fill="#fff"
+                id="breadcrumb-b"
+              >
+                <use
+                  href="#breadcrumb-a"
+                />
+              </mask>
+              <use
+                fill="#000"
+                fill-opacity="0"
+                fill-rule="nonzero"
+                href="#breadcrumb-a"
+              />
+              <g
+                fill="#000"
+                fill-opacity=".4"
+                mask="url(#breadcrumb-b)"
+              >
+                <rect
+                  height="16"
+                  transform="translate(-5 -2)"
+                  width="16"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div
+          class="sc-gsDKAQ MuiBox-root"
+          style="align-items: center; display: flex; justify-content: center; margin: 2px;"
+        >
+          <p
+            class="MuiTypography-root-bWKFam hKjhtB MuiTypography-root MuiTypography-body1"
+            style="opacity: 0.5;"
+          >
+            1
+          </p>
+        </div>
+        <div
+          class="sc-gsDKAQ MuiBox-root"
+          style="align-items: center; display: flex; justify-content: center; margin: 2px;"
+        >
+          <button
+            class="MuiButtonBase-root-KjFju gUleGd MuiButtonBase-root MuiIconButton-root-jYvkJQ dPgUek MuiIconButton-root MuiIconButton-sizeMedium"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              height="13"
+              viewBox="0 0 7 13"
+              width="7"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                fill="none"
+                opacity=".5"
+                points=".5 12.5 6.5 6.5 .5 .5"
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root-ieAhOC kYGcPf MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </span>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
