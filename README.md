@@ -46,5 +46,5 @@ and add the gesture another way would benefit the app.
 
 Increase code coverage
 
-The app was deployed to [https://cescoferraro.github.io/](https://cescoferraro.github.io/), 
+The app was deployed to [https://cescoferraro.github.io/sketch](https://cescoferraro.github.io/sketch), 
 but the API fails because of CORS issues. Fix this would be good as well.
