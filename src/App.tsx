@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
 const client = new ApolloClient({
-  uri: "https://graphql.sketch.cloud/api",
+  uri: "https://thingproxy.freeboard.io/fetch/https://graphql.sketch.cloud/api",
   cache: new InMemoryCache(),
 });
 
