@@ -25,6 +25,9 @@ jobs:
       - name: Install NPM packages
         run: yarn --frozen-lockfile
 
+      - name: Run tests
+        run: yarn test
+
       - name: Build project
         run: yarn build
 
